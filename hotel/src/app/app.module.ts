@@ -9,7 +9,7 @@ import { ListPage } from '../pages/list/list';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { IonicAcademyModule, MapaOcupacaoProvider } from 'ionic-mapa-ocupacao-hotel-package'
+import { IonicMapaOcupacaoModule, MapaOcupacaoProvider } from 'ionic-mapa-ocupacao-hotel-package'
 // import {AcademyComponent, AcademyProvider, IonicAcademyModule} from 'ionic-component-role';
 @NgModule({
   declarations: [
@@ -21,7 +21,7 @@ import { IonicAcademyModule, MapaOcupacaoProvider } from 'ionic-mapa-ocupacao-ho
     BrowserModule,
     // IonicMapaOcupacaoHotelModule,
     // MapaOcupacaoComponent,
-    IonicAcademyModule,
+    IonicMapaOcupacaoModule,
     // IonicMapaOcupacaoHotelModule,
     IonicModule.forRoot(MyApp),
   ],
@@ -30,7 +30,7 @@ import { IonicAcademyModule, MapaOcupacaoProvider } from 'ionic-mapa-ocupacao-ho
     MyApp,
     HomePage,
     ListPage,
-    
+    // MapaOcupacaoComponent
     // MapaOcupacaoComponent, MapaOcupacaoEdicaoComponent
   ],
   providers: [
