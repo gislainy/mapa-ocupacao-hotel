@@ -2,7 +2,7 @@ import { NgModule, ModuleWithProviders } from '@angular/core';
 import { IonicModule } from 'ionic-angular';
 import { MapaOcupacaoComponent } from './components/mapa-ocupacao/mapa-ocupacao';
 import { MapaOcupacaoEdicaoComponent } from './components/mapa-ocupacao-edicao/mapa-ocupacao-edicao';
-
+import { MapaOcupacaoProvider } from './providers/mapa-ocupacao-provider'
 @NgModule({
     imports: [
         // Only if you use elements like ion-content, ion-xyz...
@@ -23,6 +23,7 @@ export class IonicMapaOcupacaoHotelModule {
     static forRoot(): ModuleWithProviders {
         return {
             ngModule: IonicMapaOcupacaoHotelModule,
+            providers: [MapaOcupacaoProvider]
         };
     }
 }
