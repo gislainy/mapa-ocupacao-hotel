@@ -1,3 +1,4 @@
 export * from './ionic-academy.module';
-export * from './components/academy-component';
+export * from './components/mapa-ocupacao-component';
+export * from './components/mapa-ocupacao-edicao-component';
 export * from './providers/academy-provider';

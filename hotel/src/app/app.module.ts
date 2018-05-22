@@ -12,7 +12,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 // import { IonicMapaOcupacaoModule, MapaOcupacaoProvider } from 'ionic-mapa-ocupacao-hotel-package'
 // import {AcademyComponent, AcademyProvider, IonicAcademyModule} from 'ionic-component-role';
 
-import { AcademyComponent, IonicAcademyModule } from 'ionic-academy-package'
+import { MapaOcupacaoComponent, IonicAcademyModule, MapaOcupacaoEdicaoComponent } from 'ionic-academy-package'
 @NgModule({
   declarations: [
     MyApp,
@@ -33,7 +33,8 @@ import { AcademyComponent, IonicAcademyModule } from 'ionic-academy-package'
     MyApp,
     HomePage,
     ListPage,
-    AcademyComponent
+    MapaOcupacaoComponent,
+    MapaOcupacaoEdicaoComponent
     // MapaOcupacaoComponent
     // MapaOcupacaoComponent, MapaOcupacaoEdicaoComponent
   ],
