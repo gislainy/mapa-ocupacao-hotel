@@ -9,6 +9,8 @@ import { ListPage } from '../pages/list/list';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+import { IonicAcademyModule, MapaOcupacaoProvider } from 'ionic-mapa-ocupacao-hotel-package'
+// import {AcademyComponent, AcademyProvider, IonicAcademyModule} from 'ionic-component-role';
 @NgModule({
   declarations: [
     MyApp,
@@ -17,18 +19,25 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   imports: [
     BrowserModule,
+    // IonicMapaOcupacaoHotelModule,
+    // MapaOcupacaoComponent,
+    IonicAcademyModule,
+    // IonicMapaOcupacaoHotelModule,
     IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    
+    // MapaOcupacaoComponent, MapaOcupacaoEdicaoComponent
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    MapaOcupacaoProvider
   ]
 })
 export class AppModule {}

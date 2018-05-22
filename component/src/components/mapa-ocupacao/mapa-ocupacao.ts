@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IMapaOcupacao, mapaOcupadaData, clientesData } from '../mapa-ocupacao-data';
 import { NavController } from 'ionic-angular/navigation/nav-controller';
-import { MapaOcupacaoEdicaoComponent } from '../mapa-ocupacao-edicao/mapa-ocupacao-edicao';
+// import { MapaOcupacaoEdicaoComponent } from '../mapa-ocupacao-edicao/mapa-ocupacao-edicao';
 
 /**
  * Generated class for the MapaOcupacaoComponent component.
@@ -44,8 +44,8 @@ export class MapaOcupacaoComponent {
     return clientesData.filter(c => c.key == clienteId)[0].nome;
   }
   abrirEdicao(mapaItem: IMapaOcupacao) {
-    this.navCtrl.push(MapaOcupacaoEdicaoComponent, {
-      mapaItem
-    });
+    // this.navCtrl.push(MapaOcupacaoEdicaoComponent, {
+    //   mapaItem
+    // });
   }
 }
