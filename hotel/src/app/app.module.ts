@@ -8,7 +8,7 @@ import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-
+import { WgContentComponent } from '../components/wg-content/wg-content';
 // import { IonicMapaOcupacaoModule, MapaOcupacaoProvider } from 'ionic-mapa-ocupacao-hotel-package'
 // import {AcademyComponent, AcademyProvider, IonicAcademyModule} from 'ionic-component-role';
 
@@ -17,7 +17,8 @@ import { MapaOcupacaoComponent, IonicAcademyModule, MapaOcupacaoEdicaoComponent 
   declarations: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    WgContentComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +35,8 @@ import { MapaOcupacaoComponent, IonicAcademyModule, MapaOcupacaoEdicaoComponent 
     HomePage,
     ListPage,
     MapaOcupacaoComponent,
-    MapaOcupacaoEdicaoComponent
+    MapaOcupacaoEdicaoComponent,
+    WgContentComponent
     // MapaOcupacaoComponent
     // MapaOcupacaoComponent, MapaOcupacaoEdicaoComponent
   ],

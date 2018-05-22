@@ -2,7 +2,9 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { MapaOcupacaoEdicaoComponent } from './mapa-ocupacao-edicao-component';
+
 const HTML_TEMPLATE = `
+<wg-content title="Mapa Ocupacao">
 <ion-grid>
 <ion-row>
   <ion-col col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3 *ngFor="let acomodacao of mapa">
@@ -25,6 +27,7 @@ const HTML_TEMPLATE = `
   </ion-col>
 </ion-row>
 </ion-grid>
+</wg-content>
 `;
 
 const CSS_STYLE = `

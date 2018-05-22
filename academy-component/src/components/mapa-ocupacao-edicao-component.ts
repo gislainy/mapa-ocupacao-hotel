@@ -4,6 +4,7 @@ import { NavParams } from 'ionic-angular/navigation/nav-params';
 import { ToastController } from 'ionic-angular/components/toast/toast-controller';
  
 const HTML_TEMPLATE = `
+<wg-content title="Mapa Ocupacao - Edição">
 <ion-grid>
   <ion-row>
       <ion-item col-12 col-md-12>
@@ -26,6 +27,8 @@ const HTML_TEMPLATE = `
     </ion-grid>
   </ion-row>
 </ion-grid>
+
+</wg-content>
 `;
  
 const CSS_STYLE = `

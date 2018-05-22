@@ -1,4 +1,4 @@
-import { NgModule, ModuleWithProviders } from '@angular/core';
+import { NgModule, ModuleWithProviders, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { MapaOcupacaoComponent } from './components/mapa-ocupacao-component';
 import { MapaOcupacaoEdicaoComponent } from './components/mapa-ocupacao-edicao-component';
 import { AcademyProvider } from './providers/academy-provider';
@@ -12,13 +12,14 @@ import { IonicModule } from 'ionic-angular';
     declarations: [
         // declare all components that your module uses
         MapaOcupacaoComponent,
-        MapaOcupacaoEdicaoComponent
+        MapaOcupacaoEdicaoComponent,
     ],
     exports: [
         // export the component(s) that you want others to be able to use
         MapaOcupacaoComponent,
-        MapaOcupacaoEdicaoComponent
-    ]
+        MapaOcupacaoEdicaoComponent,
+    ],
+    schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class IonicAcademyModule {
     static forRoot(): ModuleWithProviders {
