@@ -9,8 +9,10 @@ import { ListPage } from '../pages/list/list';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { IonicMapaOcupacaoModule, MapaOcupacaoProvider } from 'ionic-mapa-ocupacao-hotel-package'
+// import { IonicMapaOcupacaoModule, MapaOcupacaoProvider } from 'ionic-mapa-ocupacao-hotel-package'
 // import {AcademyComponent, AcademyProvider, IonicAcademyModule} from 'ionic-component-role';
+
+import { AcademyComponent, IonicAcademyModule } from 'ionic-academy-package'
 @NgModule({
   declarations: [
     MyApp,
@@ -21,8 +23,9 @@ import { IonicMapaOcupacaoModule, MapaOcupacaoProvider } from 'ionic-mapa-ocupac
     BrowserModule,
     // IonicMapaOcupacaoHotelModule,
     // MapaOcupacaoComponent,
-    IonicMapaOcupacaoModule,
+    // IonicMapaOcupacaoModule,
     // IonicMapaOcupacaoHotelModule,
+    IonicAcademyModule,
     IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
@@ -30,14 +33,15 @@ import { IonicMapaOcupacaoModule, MapaOcupacaoProvider } from 'ionic-mapa-ocupac
     MyApp,
     HomePage,
     ListPage,
+    AcademyComponent
     // MapaOcupacaoComponent
     // MapaOcupacaoComponent, MapaOcupacaoEdicaoComponent
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
-    MapaOcupacaoProvider
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
+    // MapaOcupacaoProvider
   ]
 })
-export class AppModule {}
+export class AppModule { }
