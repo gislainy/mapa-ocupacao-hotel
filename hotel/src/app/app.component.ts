@@ -9,6 +9,8 @@ import { ListPage } from '../pages/list/list';
 
 import { MapaOcupacaoComponent } from 'ionic-mapa-ocupacao-hotel-package'
 import { IonicPodeProvider } from 'ionic-pode-component'
+
+import { IonicUsuarioComponent  } from 'ionic-usuario-component';
 @Component({
   templateUrl: 'app.html'
 })
@@ -27,6 +29,7 @@ export class MyApp {
       { title: 'Home', component: HomePage },
       { title: 'List', component: ListPage },
       { title: 'Mapa Ocupacao', component: MapaOcupacaoComponent },
+      { title: 'Usuario', component: IonicUsuarioComponent },
       // { title: 'Mapa Ocupacao', component: MapaOcupacaoComponent }
     ];
 

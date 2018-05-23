@@ -1,13 +1,36 @@
+
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
+import { UsuarioEdicaoComponent } from './usuario-edicao-component';
+
+const HTML_TEMPLATE = `
+<ion-content>
+  <ion-list>
+    <button ion-item *ngFor="let item of userList" (click)="abrirTelaDeEdicao($event, item)">
+        <ion-icon ios="ios-contact" md="md-contact"></ion-icon>
+      {{item.nome}}
+    </button>
+  </ion-list>
+</ion-content>
+`;
+
+const CSS_STYLE = `
+.special-text {
+    font-weight: 800;
+    font-size: 15pt;
+    text-align: center;
+    color: #0000FF;
+}
+`;
 
 @Component({
-  selector: 'page-list',
-  templateUrl: 'list.html'
+  selector: 'usuario-component',
+  template: HTML_TEMPLATE,
+  styles: [CSS_STYLE]
 })
-export class ListPage {
+export class IonicUsuarioComponent {
   private userList;
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController) {
     this.userList = [
       {
         _id: 'userGislainyId',
@@ -36,8 +59,9 @@ export class ListPage {
     ]; 
   }
   abrirTelaDeEdicao(event, user) {
-    // this.navCtrl.push(, {
-    //   user
-    // })
+    this.navCtrl.push(UsuarioEdicaoComponent, {
+      user
+    })
   }
 }
+

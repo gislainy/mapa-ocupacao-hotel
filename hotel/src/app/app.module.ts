@@ -14,6 +14,7 @@ import { WgContentComponent } from '../components/wg-content/wg-content';
 
 import { MapaOcupacaoComponent, IonicMapaOcupacaoModule, MapaOcupacaoEdicaoComponent } from 'ionic-mapa-ocupacao-hotel-package'
 import { IonicPodeModule, PodeComponent, IonicPodeProvider } from 'ionic-pode-component'
+import { IonicUsuarioComponent, UsuarioEdicaoComponent, IonicUsuarioModule } from 'ionic-usuario-component';
 @NgModule({
   declarations: [
     MyApp,
@@ -29,6 +30,7 @@ import { IonicPodeModule, PodeComponent, IonicPodeProvider } from 'ionic-pode-co
     // IonicMapaOcupacaoHotelModule,
     IonicMapaOcupacaoModule,
     IonicPodeModule,
+    IonicUsuarioModule,
     IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
@@ -39,7 +41,9 @@ import { IonicPodeModule, PodeComponent, IonicPodeProvider } from 'ionic-pode-co
     MapaOcupacaoComponent,
     MapaOcupacaoEdicaoComponent,
     WgContentComponent,
-    PodeComponent
+    PodeComponent,
+    IonicUsuarioComponent,
+    UsuarioEdicaoComponent
     // MapaOcupacaoComponent
     // MapaOcupacaoComponent, MapaOcupacaoEdicaoComponent
   ],
