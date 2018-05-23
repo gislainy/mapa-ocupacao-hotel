@@ -7,7 +7,7 @@ import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 // import {  MapaOcupacaoComponent } from '../../../component/dist/index';
 
-import { MapaOcupacaoComponent } from 'ionic-academy-package'
+import { MapaOcupacaoComponent } from 'ionic-mapa-ocupacao-hotel-package'
 @Component({
   templateUrl: 'app.html'
 })

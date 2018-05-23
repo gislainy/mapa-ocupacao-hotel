@@ -12,7 +12,7 @@ import { WgContentComponent } from '../components/wg-content/wg-content';
 // import { IonicMapaOcupacaoModule, MapaOcupacaoProvider } from 'ionic-mapa-ocupacao-hotel-package'
 // import {AcademyComponent, AcademyProvider, IonicAcademyModule} from 'ionic-component-role';
 
-import { MapaOcupacaoComponent, IonicAcademyModule, MapaOcupacaoEdicaoComponent } from 'ionic-academy-package'
+import { MapaOcupacaoComponent, IonicAcademyModule, MapaOcupacaoEdicaoComponent } from 'ionic-mapa-ocupacao-hotel-package'
 @NgModule({
   declarations: [
     MyApp,
