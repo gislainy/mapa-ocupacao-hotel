@@ -18,10 +18,10 @@ import { IonicModule } from 'ionic-angular';
     ],
     schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
-export class IonicAcademyModule {
+export class IonicPodeModule {
     static forRoot(): ModuleWithProviders {
         return {
-            ngModule: IonicAcademyModule,
+            ngModule: IonicPodeModule,
             providers: [AcademyProvider]
         };
     }

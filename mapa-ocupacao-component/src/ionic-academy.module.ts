@@ -3,11 +3,13 @@ import { MapaOcupacaoComponent } from './components/mapa-ocupacao-component';
 import { MapaOcupacaoEdicaoComponent } from './components/mapa-ocupacao-edicao-component';
 import { AcademyProvider } from './providers/academy-provider';
 import { IonicModule } from 'ionic-angular';
+import { IonicPodeModule } from 'ionic-pode-component'
  
 @NgModule({
     imports: [
         // Only if you use elements like ion-content, ion-xyz...
-        IonicModule
+        IonicModule,
+        IonicPodeModule
     ],
     declarations: [
         // declare all components that your module uses
@@ -21,10 +23,10 @@ import { IonicModule } from 'ionic-angular';
     ],
     schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
-export class IonicAcademyModule {
+export class IonicMapaOcupacaoModule {
     static forRoot(): ModuleWithProviders {
         return {
-            ngModule: IonicAcademyModule,
+            ngModule: IonicMapaOcupacaoModule,
             providers: [AcademyProvider]
         };
     }

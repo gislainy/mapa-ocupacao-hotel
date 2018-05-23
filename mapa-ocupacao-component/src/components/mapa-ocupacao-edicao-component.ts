@@ -21,7 +21,10 @@ const HTML_TEMPLATE = `
       </ion-item>
     <ion-grid lign-items-end>
       <ion-row >
-        <button color="danger" ion-button (click)="cancelar()">Cancelar</button>
+        <button color="secondary" ion-button (click)="cancelar()">Cancelar</button>
+        <pode roles="gerente">
+          <button color="danger" ion-button (click)="excluir()">Excluir</button>
+        </pode>
         <button color="primary" ion-button (click)="salvar()">Salvar</button>
       </ion-row>
     </ion-grid>

@@ -12,7 +12,8 @@ import { WgContentComponent } from '../components/wg-content/wg-content';
 // import { IonicMapaOcupacaoModule, MapaOcupacaoProvider } from 'ionic-mapa-ocupacao-hotel-package'
 // import {AcademyComponent, AcademyProvider, IonicAcademyModule} from 'ionic-component-role';
 
-import { MapaOcupacaoComponent, IonicAcademyModule, MapaOcupacaoEdicaoComponent } from 'ionic-mapa-ocupacao-hotel-package'
+import { MapaOcupacaoComponent, IonicMapaOcupacaoModule, MapaOcupacaoEdicaoComponent } from 'ionic-mapa-ocupacao-hotel-package'
+import { IonicPodeModule, PodeComponent } from 'ionic-pode-component'
 @NgModule({
   declarations: [
     MyApp,
@@ -26,7 +27,8 @@ import { MapaOcupacaoComponent, IonicAcademyModule, MapaOcupacaoEdicaoComponent 
     // MapaOcupacaoComponent,
     // IonicMapaOcupacaoModule,
     // IonicMapaOcupacaoHotelModule,
-    IonicAcademyModule,
+    IonicMapaOcupacaoModule,
+    IonicPodeModule,
     IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
@@ -36,7 +38,8 @@ import { MapaOcupacaoComponent, IonicAcademyModule, MapaOcupacaoEdicaoComponent 
     ListPage,
     MapaOcupacaoComponent,
     MapaOcupacaoEdicaoComponent,
-    WgContentComponent
+    WgContentComponent,
+    PodeComponent
     // MapaOcupacaoComponent
     // MapaOcupacaoComponent, MapaOcupacaoEdicaoComponent
   ],

@@ -25,37 +25,37 @@ const CSS_STYLE = `
 })
 export class PodeComponent {
   private _text: string;
-  private _rules: string;
-  private _rules_arr: Array<string>;
+  private _roles: string;
+  private _roles_arr: Array<string>;
   constructor() {
     // debugger
     // this.text = text;
-    // this.rules = "administrador";
+    // this.roles = "administrador";
     // console.log('Hello PodeComponent Component');
     this._text = 'Hello World';
   }
   @Input()  title: string
 
-  @Input('rules')
-  get rules(): string {
-    return this.rules;
+  @Input('roles')
+  get roles(): string {
+    return this.roles;
   }
-  set rules(rules: string) {
-    this._rules = rules;
-    this._rules_arr = this._rules.split(', ');
+  set roles(roles: string) {
+    this._roles = roles;
+    this._roles_arr = this._roles.split(', ');
   }
   // pode_fn() {
   //   debugger
-  //   return pode('teste', this._rules_arr);
+  //   return pode('teste', this._roles_arr);
   // }
   pode_fn() {
-    return pode('teste', this._rules_arr);
+    return pode('teste', this._roles_arr);
   }
 }
 
 
 
-function pode(userId: string, rules: Array<string>): Boolean {
+function pode(userId: string, roles: Array<string>): Boolean {
   const user = userList.filter(u => u._id === userId_x)[0];
   const permissoes = [];
   Object.keys(rolesGroup).forEach(r => {
@@ -66,11 +66,11 @@ function pode(userId: string, rules: Array<string>): Boolean {
       })
     };
   });
-  return permissoes.some(p => rules.indexOf(p) >= 0)
+  return permissoes.some(p => roles.indexOf(p) >= 0)
 }
 
 
-const userId_x = "userMarcelloId";
+const userId_x = "userJoseId";
 
 const rolesGroup = {
   gerente: [
