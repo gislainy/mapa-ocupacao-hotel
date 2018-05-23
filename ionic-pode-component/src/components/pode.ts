@@ -3,7 +3,7 @@ import { Component, Input } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { NavParams } from 'ionic-angular/navigation/nav-params';
 import { ToastController } from 'ionic-angular/components/toast/toast-controller';
- 
+import { global } from '../usuario';
 const HTML_TEMPLATE = `
 <div *ngIf="pode_fn()">
 <ng-content></ng-content>
@@ -56,7 +56,8 @@ export class PodeComponent {
 
 
 function pode(userId: string, roles: Array<string>): Boolean {
-  const user = userList.filter(u => u._id === userId_x)[0];
+  const userIdGlobal = global.getUsuarioId();
+  const user = userList.filter(u => u._id === userIdGlobal)[0];
   const permissoes = [];
   Object.keys(rolesGroup).forEach(r => {
     if (user.roles.some(_r => _r == r)) {
@@ -70,7 +71,7 @@ function pode(userId: string, roles: Array<string>): Boolean {
 }
 
 
-const userId_x = "userJoseId";
+
 
 const rolesGroup = {
   gerente: [

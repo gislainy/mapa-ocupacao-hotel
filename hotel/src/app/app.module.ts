@@ -13,7 +13,7 @@ import { WgContentComponent } from '../components/wg-content/wg-content';
 // import {AcademyComponent, AcademyProvider, IonicAcademyModule} from 'ionic-component-role';
 
 import { MapaOcupacaoComponent, IonicMapaOcupacaoModule, MapaOcupacaoEdicaoComponent } from 'ionic-mapa-ocupacao-hotel-package'
-import { IonicPodeModule, PodeComponent } from 'ionic-pode-component'
+import { IonicPodeModule, PodeComponent, IonicPodeProvider } from 'ionic-pode-component'
 @NgModule({
   declarations: [
     MyApp,
@@ -46,6 +46,7 @@ import { IonicPodeModule, PodeComponent } from 'ionic-pode-component'
   providers: [
     StatusBar,
     SplashScreen,
+    IonicPodeProvider,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     // MapaOcupacaoProvider
   ]

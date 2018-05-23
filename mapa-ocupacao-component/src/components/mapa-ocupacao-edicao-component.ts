@@ -65,4 +65,12 @@ export class MapaOcupacaoEdicaoComponent {
     });
     toast.present();
   }
+  excluir() {
+    this.navCtrl.pop();
+    let toast = this.toastCtrl.create({
+      message: 'Esse item não pode ser excluido',
+      duration: 3000
+    });
+    toast.present();
+  }
 }

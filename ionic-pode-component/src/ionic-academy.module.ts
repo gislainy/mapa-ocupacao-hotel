@@ -1,6 +1,6 @@
 import { NgModule, ModuleWithProviders, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { PodeComponent } from './components/pode';
-import { AcademyProvider } from './providers/academy-provider';
+import { IonicPodeProvider } from './providers/academy-provider';
 import { IonicModule } from 'ionic-angular';
  
 @NgModule({
@@ -22,7 +22,7 @@ export class IonicPodeModule {
     static forRoot(): ModuleWithProviders {
         return {
             ngModule: IonicPodeModule,
-            providers: [AcademyProvider]
+            providers: [IonicPodeProvider]
         };
     }
 }

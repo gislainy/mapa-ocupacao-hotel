@@ -8,6 +8,7 @@ import { ListPage } from '../pages/list/list';
 // import {  MapaOcupacaoComponent } from '../../../component/dist/index';
 
 import { MapaOcupacaoComponent } from 'ionic-mapa-ocupacao-hotel-package'
+import { IonicPodeProvider } from 'ionic-pode-component'
 @Component({
   templateUrl: 'app.html'
 })
@@ -18,9 +19,9 @@ export class MyApp {
 
   pages: Array<{ title: string, component: any }>;
 
-  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
+  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen, public pode: IonicPodeProvider) {
     this.initializeApp();
-
+    this.pode.setUsuarioId('userMarcelloId');
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: HomePage },
