@@ -1,10 +1,12 @@
 {
-  "name": "ionic-academy-package",
-  "version": "0.0.1",
-  "description": "A Simple Ionic Academy Module",
+  "name": "ionic-mapa-ocupacao-hotel-package",
+  "version": "0.0.5",
+  "description": "A simple demonstration of a hotel occupancy map",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "ngc": "ngc",
     "build": "rm -rf dist && npm run ngc",
@@ -12,12 +14,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/saimon24/ionic-academy-module.git"
+    "url": "git+https://github.com/gislainy/mapa-ocupacao-hotel"
   },
   "keywords": [],
-  "author": "Simon Grimm",
+  "author": "Gislainy Crisostomo Velasco",
   "license": "MIT",
-  "homepage": "https://ionicacademy.com",
   "devDependencies": {
     "@angular/common": "5.0.3",
     "@angular/compiler": "5.0.3",
